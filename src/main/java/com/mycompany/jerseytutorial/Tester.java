@@ -10,9 +10,12 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam; 
 import javax.ws.rs.core.Response;
 
-					
+	
+
+
+
 @Path("/convert") 
-public class Tester {
+public class Tester { 
 					
   @GET
   @Path("/roman/{rom}")
@@ -21,9 +24,9 @@ public class Tester {
     int decimal = 0;
 
     String romanNumeral = roman.toUpperCase();
-    for(int x = 0;x<romanNumeral.length();x++)
+    for(int x = 0;x<romanNumeral.length();x++) 
     {
-        char convertToDecimal = roman.charAt(x);
+        char convertToDecimal = roman.charAt(x); 
 
         switch (convertToDecimal) 
         {
@@ -70,7 +73,7 @@ public class Tester {
     }
     if (romanNumeral.contains("XC"))
     {
-        decimal-=10;
+        decimal-=10; 
     }
     if (romanNumeral.contains("CD"))
     {
@@ -92,7 +95,7 @@ public class Tester {
 if (input < 1 || input > 3999)
      
  
-    while (input >= 1000) {
+    while (input >= 1000) { 
         s += "M"; 
         input -= 1000;        }
 
